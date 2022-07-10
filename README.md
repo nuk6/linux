@@ -61,3 +61,21 @@ while [ $i -gt 2 ]
     done
 echo $t
 ```
+6) Testing if  file or a directory eists
+```shell
+#! /bin/dash
+
+read dirOrFileName
+if [ -d ${dirOrFileName} ]
+    then
+        echo "Directory ${dirOrFileName} exists"
+    else 
+        echo "Directory ${dirOrFileName} does not exist"
+fi
+if [ -f ${dirOrFileName} ]
+    then
+        echo "File ${dirOrFileName} exists"
+    else 
+        echo "File ${dirOrFileName} does not exist"
+fi
+```
