@@ -34,7 +34,17 @@ while [ $i -gt 0 ]
         ((i = i-1))
     done
 ```
-4) Printing fibonacci numbers
+4) For loop for N times
+```shell
+#! /bin/rbash
+read -p "Enter a number : " N
+for ((i = 0; i < N; ++i));
+    do 
+        echo $i
+    done
+
+```
+5) Printing fibonacci numbers
 ```shell
 #! /bin/bash
 read -p "Enter a number : " N
