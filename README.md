@@ -34,3 +34,20 @@ while [ $i -gt 0 ]
         ((i = i-1))
     done
 ```
+4) Printing fibonacci numbers
+```shell
+#! /bin/bash
+read -p "Enter a number : " N
+a=1
+b=2
+i=$N
+echo $i
+while [ $i -gt 2 ]
+    do
+        ((t = a+b))
+        ((a = b))
+        ((b = t))
+        ((i = i-1))
+    done
+echo $t
+```
