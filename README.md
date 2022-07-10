@@ -12,7 +12,7 @@ echo "The name entered is ${NAME}"
 #! /bin/rbash
 read -p "Enter a number to check whether even : " N
 # echo "Number entered is ${N}"
-if [ `expr $N % 2` == 0 ]
+if [ $((N%2)) == 0 ]
     then
         echo "The Number is Even"
     else 
