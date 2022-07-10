@@ -19,3 +19,18 @@ if [ $((N%2)) == 0 ]
         echo "The Number is Odd"
 fi
 ```
+3) For and While loops
+```shell
+#! /bin/bash
+for i in {1,2,3,4,5}
+    do
+        echo $i
+    done
+
+i=10
+while [ $i -gt 0 ]
+    do
+        echo $i
+        ((i = i-1))
+    done
+```
